@@ -1,10 +1,10 @@
 # Web Security Scanner
 
-This is a Python-based security auditing tool that analyzes websites for common security misconfigurations and prints a detailed report of what security measures the website has and what its lacking.
+This is a Python-based security auditing tool that analyzes websites for common security misconfigurations and prints a detailed report of what security measures the website has and what it's lacking.
 
 
 ## Features
-- **Security Header Analysis**: Checks for essential HTTP headers
+- **Security Header Analysis**: Checks for essential HTTP security headers
   - X-Frame-Options (clickjacking protection)
   - X-Content-Type-Options (MIME-sniffing prevention)
   - Strict-Transport-Security (HTTPS enforcement)
@@ -14,9 +14,9 @@ This is a Python-based security auditing tool that analyzes websites for common 
 
 - **Multi-Site Scanning**: Scans multiple websites in a single run of the tool
 
-- **JSON Export**: Saves a detailed report of the tool's finding to a structures JSON file for further analysis
+- **JSON Export**: Saves a detailed report of the tool's findings to a structured JSON file
 
-- **Security Scoring**: Automatically scores websites based on the security headers found
+- **Security Scoring**: Automatically scores websites based on the security headers
 
 
 ## Usage
@@ -29,7 +29,7 @@ from scanner import check_url
 check_url('https://youtube.com')
 ```
 
-## Scanning Multiple Sites
+### Scanning Multiple Sites
 ```python
 from scanner import check_multiple_url
 
@@ -39,6 +39,7 @@ sites = [
     'https://linkedin.com'
 ]
 
+# scan all websites in sites
 check_multiple_url(sites)
 ```
 
